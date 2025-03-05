@@ -2,7 +2,7 @@
 <Document>
   <Engineering version="V17" />
   <DocumentInfo>
-    <Created>2025-03-05T07:58:58.7754007Z</Created>
+    <Created>2025-03-05T13:33:13.0976747Z</Created>
     <ExportSetting>WithDefaults</ExportSetting>
     <InstalledProducts>
       <Product>
@@ -223,53 +223,67 @@
     </Access>
     <Access Scope="GlobalVariable" UId="24">
       <Symbol>
+        <Component Name="M_ZERO" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
         <Component Name="M_ONE" />
       </Symbol>
     </Access>
-    <Part Name="Contact" UId="25" />
-    <Part Name="Contact" UId="26">
+    <Part Name="Contact" UId="26" />
+    <Part Name="Contact" UId="27" />
+    <Part Name="Contact" UId="28">
       <Negated Name="operand" />
     </Part>
-    <Part Name="O" UId="27">
+    <Part Name="O" UId="29">
       <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
     </Part>
-    <Part Name="RCoil" UId="28" />
-    <Part Name="SCoil" UId="29" />
+    <Part Name="RCoil" UId="30" />
+    <Part Name="SCoil" UId="31" />
   </Parts>
   <Wires>
-    <Wire UId="30">
-      <IdentCon UId="21" />
-      <NameCon UId="25" Name="operand" />
+    <Wire UId="32">
+      <Powerrail />
+      <NameCon UId="26" Name="in" />
+      <NameCon UId="28" Name="in" />
     </Wire>
-    <Wire UId="31">
-      <IdentCon UId="22" />
+    <Wire UId="33">
+      <IdentCon UId="21" />
       <NameCon UId="26" Name="operand" />
     </Wire>
-    <Wire UId="32">
+    <Wire UId="34">
+      <NameCon UId="26" Name="out" />
+      <NameCon UId="27" Name="in" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="22" />
+      <NameCon UId="27" Name="operand" />
+    </Wire>
+    <Wire UId="36">
+      <NameCon UId="27" Name="out" />
+      <NameCon UId="29" Name="in1" />
+    </Wire>
+    <Wire UId="37">
       <IdentCon UId="23" />
       <NameCon UId="28" Name="operand" />
     </Wire>
-    <Wire UId="33">
+    <Wire UId="38">
+      <NameCon UId="28" Name="out" />
+      <NameCon UId="29" Name="in2" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="29" Name="out" />
+      <NameCon UId="30" Name="in" />
+      <NameCon UId="31" Name="in" />
+    </Wire>
+    <Wire UId="40">
       <IdentCon UId="24" />
-      <NameCon UId="29" Name="operand" />
+      <NameCon UId="30" Name="operand" />
     </Wire>
-    <Wire UId="34">
-      <NameCon UId="27" Name="out" />
-      <NameCon UId="28" Name="in" />
-      <NameCon UId="29" Name="in" />
-    </Wire>
-    <Wire UId="35">
-      <NameCon UId="25" Name="out" />
-      <NameCon UId="27" Name="in1" />
-    </Wire>
-    <Wire UId="36">
-      <NameCon UId="26" Name="out" />
-      <NameCon UId="27" Name="in2" />
-    </Wire>
-    <Wire UId="37">
-      <Powerrail />
-      <NameCon UId="25" Name="in" />
-      <NameCon UId="26" Name="in" />
+    <Wire UId="41">
+      <IdentCon UId="25" />
+      <NameCon UId="31" Name="operand" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
